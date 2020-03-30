@@ -1,0 +1,5 @@
+numpy>=1.17.4
+flask>=1.1.1
+flask_cors>=3.0.8
+jsonpickle>=1.3
+
