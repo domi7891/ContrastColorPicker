@@ -2,16 +2,108 @@
 <html lang="en">
 
 <head>
-    <script src="js/p5.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <script src="js/p5.js"></script> -->
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/utils.js"></script>
 
 </head>
 
 <body>
-    <script src="js/sketch.js"></script>
+    <!-- <script src="js/sketch.js"></script> -->
+    <script src="js/colorpicker.js"></script>
     <script src="js/matrix.js"></script>
     <script src="js/nn.js"></script>
+
+
+    <div class="container">
+        <div class="bg">
+            <div class="fg">
+                <div class="left text">
+                    <h2>Small Text</h2>
+                    Amet duis reprehenderit id tempor eiusmod quis qui nisi sunt dolor. Ullamco nisi ad amet voluptate et eu culpa anim excepteur in incididunt incididunt. In commodo sit ullamco est labore cillum ad sint. Excepteur laboris ut do dolor culpa esse cillum sit
+                    qui ea commodo reprehenderit occaecat. Eu aliquip est minim laboris eiusmod aliquip culpa quis qui. Esse pariatur excepteur amet occaecat consectetur reprehenderit mollit exercitation.
+                </div>
+                <div class="right text">
+                    <h2>Large Text</h2>
+                    Velit fugiat quis mollit consectetur consectetur ullamco duis velit elit officia. Consequat excepteur dolor et dolor elit culpa excepteur laboris sit anim sit ex aute aute. Excepteur aliqua incididunt magna aliquip in. Laborum commodo officia tempor eiusmod
+                    ut aliqua duis sunt id consequat fugiat voluptate ex cupidatat. Est adipisicing laborum aliqua ea ea exercitation eu sit deserunt ipsum laborum laborum. Nisi tempor in occaecat consequat anim culpa minim non esse adipisicing irure
+                    veniam. Adipisicing ullamco minim aute minim dolor est est ut ut in.
+                </div>
+                <div class="spacer"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottomHalf">
+        <div class="firstRow">
+            <div id="colorpicker"></div>
+            <div class="rightPart">
+                <div class="color">
+                </div>
+                <div class="submit">
+                    <button id="submit">Calculate
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="ratio">
+            Ratio: <span id="lum">21</span>
+        </div>
+        <div class="secondRow">
+            <div class="level">
+                <span id="AANormal">
+                        AA <span class="small">Normal</span>
+                </span>
+                <i class="fas fa-check"></i>
+                <i class="fas fa-times hidden"></i>
+            </div>
+            <div class="level">
+                <span id="AALarge">
+                        AA <span class="small">Large</span>
+                </span>
+                <i class="fas fa-check"></i>
+                <i class="fas fa-times hidden"></i>
+            </div>
+            <div class="level">
+                <span id="AAANormal">
+                        AAA <span class="small">Normal</span>
+                </span>
+                <i class="fas fa-check"></i>
+                <i class="fas fa-times hidden"></i>
+            </div>
+            <div class="level">
+                <span id="AAALarge">
+                    AAA <span class="small">Large</span>
+                </span>
+                <i class="fas fa-check"></i>
+                <i class="fas fa-times hidden"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <!--    <div id="cvs" class="cvs">
+            <canvas id="picker" width="250" height="250"></canvas>
+        </div>
+        <div class="cvs" id="greyCvs">
+            <canvas id="greyScale" width="50" height="250"></canvas>
+        </div>
+
+
+        <div class="controls">
+            <div><label>R</label> <input type="number" id="rVal" min="0" max="255" value="255" /></div>
+            <div><label>G</label> <input type="number" id="gVal" min="0" max="255" value="255" /></div>
+            <div><label>B</label> <input type="number" id="bVal" min="0" max="255" value="255" /></div>
+            <div><label>RGB</label> <input type="text" id="rgbVal" readonly/></div>
+            <div><label>HEX</label> <input type="text" id="hexVal" readonly/></div>
+        </div>
+    </div> -->
 
 
 </body>

@@ -3,3 +3,4 @@ __pycache__
 .idea
 .venv
 createTrainingsData.js
+node_modules
